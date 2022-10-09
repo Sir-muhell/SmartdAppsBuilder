@@ -121,13 +121,14 @@
 
 @media (max-width: 991.98px) {
   .sticky-top.navbar {
-    position: relative;
+    position: sticky;
     background: #ffffff;
   }
 
   .navbar .navbar-collapse {
     margin-top: 15px;
     border-top: 1px solid #dddddd;
+    width: 20%;
   }
 
   .navbar .navbar-nav .nav-link,
@@ -135,6 +136,7 @@
     padding: 10px 0;
     margin-left: 0;
     color: var(--dark);
+    width: 70%;
   }
 
   .navbar .navbar-nav .nav-link:hover,
@@ -464,16 +466,22 @@
 }
 
 @media (max-width: 991.98px) {
-  .yellow {
-    background: #f5a22f !important;
-  }
-}
-
-@media (max-width: 991.98px) {
   .head {
     color: #000000 !important;
   }
   .paint {
     color: #000000 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.circle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  div.about {
+    display: none;
   }
 }
