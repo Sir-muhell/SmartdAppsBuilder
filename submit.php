@@ -13,7 +13,7 @@ $headers .= "X-Priority: 1 (Highest)\n";
 $headers .= "X-MSMail-Priority: High\n";
 $headers .= "Importance: High\n";
 
-$subject = $subj;
+$subject = "Message from Website";
 
 $body = "<p style='margin-left: 45px; margin-top: 34px; text-align: left; font-size: 17px;'>{$message} <br/>you are about to chage your password. </p>";
 $send = mail($to, $subject, $body, $headers);
