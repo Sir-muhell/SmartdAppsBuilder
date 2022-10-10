@@ -15,7 +15,7 @@ $headers .= "Importance: High\n";
 
 $subject = "Message from Website";
 
-$body = "<p style='margin-left: 45px; margin-top: 34px; text-align: left; font-size: 17px;'>{$message} <br/>you are about to chage your password. </p>";
+$body = "<p style='margin-left: 45px; margin-top: 34px; text-align: left; font-size: 17px;'>{$message} <br/></p>";
 $send = mail($to, $subject, $body, $headers);
 header("location:./")
 ?>
