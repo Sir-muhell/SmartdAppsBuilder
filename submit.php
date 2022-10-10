@@ -1,6 +1,6 @@
 <?php
-$email = $row['email'];
-$messsage = $_SESSION['message'];
+$email = $_POST['email'];
+$messsage = $_POST['message'];
 $to = "support@smartdappsbuilder.com";
 $from = $email;
 $headers = "From: " . $from . "\r\n";
